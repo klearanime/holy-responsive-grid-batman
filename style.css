@@ -10,7 +10,7 @@
     "nav ar1 ads"
     "nav ar2 ads"
     "ftr ftr ftr";
-  font-size: 5em;
+  font-size: 3em;
   text-align: center;
 }
 
@@ -66,4 +66,41 @@
   /* we could use grid areas:  */
   /* grid-area: ftr; */
   background-color: #f08a4b;
+}
+
+/*mobile*/
+@media (max-width: 800px) {
+  #app {
+    display: grid;
+    height: 1000px;
+    grid-template-columns: 15% 60% 25%;
+    grid-template-rows: 20% 10% 10% 20% 20% 20%;
+    grid-template-areas:
+      "hdr hdr hdr"
+      "nav nav nav"
+      "ar1 ar1 ar1"
+      "ar2 ar2 ar2"
+      "ads ads ads"
+      "ftr ftr ftr";
+    font-size: 3em;
+    text-align: center;  
+  }
+
+/*tablet*/
+@media (min-width: 601px) and (max-width: 800px) {
+  #app {
+    display: grid;
+    height: 1000px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 10% 25% 25% 25%;
+    grid-template-areas:
+      "hdr hdr"
+      "nav nav"
+      "ar1 ads"
+      "ar2 ads"
+      "ftr ftr";
+    font-size: 3em;
+    text-align: center;  
+    }
+  }
 }
